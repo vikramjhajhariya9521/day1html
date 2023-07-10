@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gym website</title>
+	<style>
+		div{
+			border: 3px solid  red;
+			margin-top: 20px;
+			width:40%;
+			text-align: center;
+			padding: 20px
+		}
+		img{
+			
+			width: 120px;
+			border-radius: 140px;
+			border:  5px dashed green;
+			padding: 10px;
+			transition-duration: 400ms;
+			animation: rotateimg 2s linear infinite alternate-reverse;
+		}
+
+		@keyframes rotateimg {
+
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+
+		#toggle{
+			width: 120px;
+			height: 50px;
+			background-color: red;
+			border-radius: 40px;
+			outline: none;
+			border: none;
+			appearance: none;
+			position: relative;
+		}
+		#toggle::before{
+			position: absolute;
+			content: '';
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			border-radius: 50%;
+			left: 0;
+			top: 0;
+			transition-duration: 300ms;
+		}
+
+		#toggle:checked::before{
+			left: 60%;
+		}
+		#toggle:checked{
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div>kitchen</div>
+	<div>room</div>
+	<div>hol</div>
+	<div>teris</div>
+	<p>my name is vikram </p>
+	<a href="https://www.google.com/" target="_blank">
+		<img src="vikram.jpg" alt="vikram">
+	</a>
+
+
+	<label for="">choose your course</label>
+	<select>
+		<option value="">BCA</option>
+		<option value="">MCA</option>
+		<option value="">Btech</option>
+	</select>
+
+	<label for="">volume</label>
+	<input type="range" name="" id="">
+
+	<br>
+
+	<input type="checkbox" name="" id="toggle">
+
+
+	
+</body>
+</html>
